@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalculateMe ⚡ | A Stylish Calculator</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="utils.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      margin-top: 2rem;
+    }
+
+    .row input {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      font-weight: bold;
+    }
+
+    .button {
+      background-color: rgba(255, 255, 255, 0.8);
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #facc15;
+      transform: scale(1.1);
+      font-weight: bold;
+      box-shadow: 0 0 10px #facc15a1;
+    }
+
+    @media (max-width: 600px) {
+      .row input {
+        width: 230px;
+      }
+      .button {
+        padding: 15px;
+        width: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center">Welcome to <span style="color:#facc15;">CalculateMe ⚡</span></h1>
+
+  <div class="container flex flex-col items-center mx-auto m-w-20">
+    <div class="row">
+      <input class="input" type="text" placeholder="0" readonly />
+    </div>
+    <div class="row">
+      <button class="button">C</button>
+      <button class="button">%</button>
+      <button class="button">M+</button>
+      <button class="button">M-</button>
+    </div>
+    <div class="row">
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">*</button>
+    </div>
+    <div class="row">
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">/</button>
+    </div>
+    <div class="row">
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">+</button>
+    </div>
+    <div class="row">
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">=</button>
+      <button class="button">-</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
