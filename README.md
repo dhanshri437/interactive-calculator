@@ -15,12 +15,6 @@
 
 ---
 
-## 🖼️ Preview
-
-![Calculator Preview]("C:\Users\hp\Downloads\interactive-calculator.png.jpeg")
-
----
-
 ## 🛠 Tech Stack
 
 - HTML5
